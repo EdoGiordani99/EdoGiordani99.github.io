@@ -2,15 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
-    
-    <link rel="icon" type="image/x-icon" href="/images/icon.jpg">
-    
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edoardo Giordani | Home</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" sizes="32x32" href="assets/images/logo.jpg">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
 
-<h1>Hello World!</h1>
-<p>I'm Edoardo, and this is my personal webpage!</p>
+</head>
+
+<body onload="onLoad()">
+
+    <!-- NAV BAR SECTION-->
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+
+            <a href="./index.html">
+                <h2 class="logo">EG</h2>
+            </a>
+            
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#home" class="list-link" id="home-page">Home</a>
+                    </li>
+                    <li class="nabvar__item">
+                        <a href="#projects" class="list-link" id="projects-page">Projects</a>
+                    </li>
+                    <li class="nabvar__item">
+                        <a href="#exams" class="list-link" id="exams-page">Exams</a>
+                    </li>
+                    <li class="nabvar__item">
+                        <a href="#about" class="list-link" id="about-page">About Me</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </button>
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" 
+                id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+    
+    <div class="search-form-container container" id="search-form-container">
+        
+        <div class="form-container-inner">
+            <form action="" class="form">
+                <input type="" class="form-input" placeholder="What are you looking for?">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>      
+                </button>
+            </form>
+            <span class="form-note">Or press ESC to close.</span>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Custom script -->
+    <script type='text/javascript' src="assets/js/main.js"></script>
 
 </body>
 </html>
