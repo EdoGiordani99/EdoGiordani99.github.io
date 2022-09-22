@@ -50,5 +50,20 @@ themeToggleBtn.addEventListener('click', () => {
     }
 });
 
+// Search Bar Open / Close
+const searchOpenIcon = selectElement('#search-icon')
+const searchCloseIcon = selectElement("#form-close-btn")
+const searchContainer = selectElement("#search-form-container")
 
+searchOpenIcon.addEventListener('click', () => {
+    searchContainer.classList.toggle('activated'); 
+});
 
+searchCloseIcon.addEventListener('click', () => {
+    searchContainer.classList.remove('activated'); 
+});
+
+//Exit search if ESC is pressed
+window.addEventListener('keyup', event => {
+    if(event.key === 'Escape') searchContainer.classList.remove('activated')
+});
