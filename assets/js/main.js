@@ -67,3 +67,58 @@ searchCloseIcon.addEventListener('click', () => {
 window.addEventListener('keyup', event => {
     if(event.key === 'Escape') searchContainer.classList.remove('activated')
 });
+
+// Swipers
+const swiper = new Swiper(".swiper", {
+    // How many slides to show
+    slidesPerView: 1,
+    // How much space between slides
+    spaceBetween: 20,
+    // Make the next and previous buttons work
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+    // Make the pagination indicators work
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    breakpoints:{
+        700: {
+            slidesPerView: 2
+        },
+        1200: {
+            slidesPerView: 4
+        }
+    }
+});
+
+// Send Email
+
+var emailBtn = document.getElementById('send-email-btn')
+
+emailBtn.addEventListener('click', function(e){
+    e.preventDefault()
+
+    var name = document.getElementById('name')
+    var email = document.getElementById('email')
+    var message = document.getElementById('message')
+
+    console.log('DONE');
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "edo.onspotify@gmail.com",
+        Password : "A85E17395E2932F93CF557A267DC0BB8331E",
+        To : 'edo.onspotify@gmail.com',
+        From : email,
+        Subject : "This is the subject",
+        Body : message
+    }).then((message) => {
+        if (message == "OK") return onSuccess();
+  }).catch((error) => {
+    alert("Error Senting Message")
+  });
+});
+
