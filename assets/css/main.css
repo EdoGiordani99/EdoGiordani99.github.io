@@ -79,6 +79,7 @@ body.light-theme{
     --transparent-dark-color: var(--secondary-background-color);
     --transparent-light-color: rgba(0,0,0,.1);
 }
+
 /* Reusable classes */
 .container{
     max-width: 160rem;
@@ -103,6 +104,7 @@ body.light-theme{
 .screen-sm-hidden{
     display: none;
 }
+
 /* Header */
 .header{
     background-color: var(--secondary-background-color);
@@ -586,3 +588,146 @@ body.light-theme{
     color: var(--light-color);
 }
 
+/* FOOTER */
+
+.footer{
+    background-color: var(--secondary-background-color);
+}
+
+.footer-container{
+    gap:var(--gap); 
+}
+
+.company-data{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+
+.company-description{
+    margin-block: var(--margin-sm);
+    max-width: 75%;
+}
+
+.social-media{
+    margin-bottom: var(--margin-md);
+}
+
+.copyright-notice{
+    opacity: .8;
+}
+
+.footer-list{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-title{
+    font-size: var(--font-size-md);
+    text-transform: uppercase;
+    margin-bottom: var(--margin-sm);
+}
+
+/* SCROLL BAR STILES */
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #3f4254;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #2e303b;
+}
+
+.blog-post{
+    padding-bottom: 5rem;
+}
+
+.blog-post-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-block: 2.5rem;
+}
+
+.blog-post-title{
+    font-size: clamp(3rem, 10vw, 6rem);
+}
+
+.blog-post-data .article-data{
+    margin-bottom: 2.5rem;
+}
+
+.blog-post-data img{
+    width: 100%;
+    height: var(--item-min-height-sm);
+    object-fit: cover;
+    object-position: center 10%;
+}
+
+.blog-post-container .container{
+    max-width: 90rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap:var(--gap); 
+}
+
+.quote{
+    background-color: var(--secondary-background-color);
+    padding: 2.5rem;
+}
+
+.quote p{
+    font-style: italic;
+}
+
+.quote span i{
+    font-size: 3.5;
+}
+
+.author{
+    margin-top: 5rem;
+    gap: var(--gap); 
+    background-color: var(--secondary-background-color);   
+}
+
+.author-image-box{
+    position: relative;
+    height: var(--item-min-height-md);
+}
+
+.author-about{
+    padding: 1.5rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+.author-name{
+    color: var(--light-color);
+    font-weight: 1rem;
+}
+
+.author{
+    max-width: 50rem; 
+    margin-bottom: 1rem;
+}
+
+.author-about .social-media{
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 700px){
+    .trending-news-box{
+        
+    }
+}

@@ -85,8 +85,11 @@ const swiper = new Swiper(".swiper", {
         el: '.swiper-pagination'
     },
     breakpoints:{
-        700: {
+        500: {
             slidesPerView: 2
+        },
+        800: {
+            slidesPerView: 3
         },
         1200: {
             slidesPerView: 4
