@@ -349,6 +349,7 @@ body.light-theme{
 .article{
     position: relative;
     min-height: var(--item-min-height-md);
+    transition: .5s;
 }
 
 .article-image{
@@ -876,4 +877,62 @@ body.light-theme{
 .presentation .presentation-title{
     width: 100%;
     align-items: center;
+}
+
+/* ------------------------------------
+            PROJECT PAGE
+------------------------------------ */
+
+.projects{
+    margin-top: 5rem;
+}
+
+.projects .article{
+    grid-template-columns: 30rem 1fr 15rem;
+    transform: .5s
+}
+
+.projects-article-image-wrapper{
+    height: auto;
+}
+
+.projects-grid-wrapper{
+    gap: var(--gap);
+}
+
+.projects-article-image-wrapper,
+.projects .article{
+    min-height: var(--item-min-height-sm);
+}
+
+.projects .article{
+    background-color: var(--secondary-background-color);
+}
+
+.projects-article-image-wrapper{
+    position: relative;
+}
+
+.projects-grid-wrapper .article-data-container{
+    position: static;
+    background-color: transparent;
+}
+
+.projects-grid-wrapper .article-title{
+    margin-bottom: var(--margin-sm);
+}
+
+.projects-article-mark{
+    margin: auto;
+    background-color: var(--secondary-background-color);
+    transform: .5s;
+}
+
+.article:hover{
+    background-color: var(--hover-dark-color);
+}
+
+.article:hover .projects-article-mark .title{
+    background-color: var(--hover-dark-color);
+    color: var(--hover-light-color);
 }
