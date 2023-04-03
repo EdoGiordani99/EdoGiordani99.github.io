@@ -42,7 +42,6 @@ header{
     height: 100hv; 
     color: var(--color-white);
     overflow: hidden;
-
 }
 
 section{
@@ -63,37 +62,31 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: orange
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: purple
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: red
 }
 
 .sec4{
     display: none;
     transform: translateY(-100%) scaleY(0);
-    background-color: blue
 }
 
 .sec5{
     display: none;
     transform: translateY(-100%) scaleY(0);
-    background-color: #27AE60
 }
 
 .sec6{
     display: none;
     transform: translateY(-100%) scaleY(0);
-    background-color: #0095df
 }
 
 .active {
