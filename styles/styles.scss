@@ -356,9 +356,6 @@ section{
     }
 }
 
-
-
-
 // TIMELINE
 .timeline {
     display: grid;
@@ -372,6 +369,7 @@ section{
         border-left: 1px solid var(--color-grey-5);
         .tl-icon {
             position: absolute;
+            background-color: var(--color-secondary);
             left: -27px;
             top: 0;
             width: 50px;
