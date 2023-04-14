@@ -366,7 +366,6 @@ section {
 }
 .timeline .timeline-item .tl-icon {
   position: absolute;
-  background-color: var(--color-secondary);
   left: -27px;
   top: 0;
   width: 50px;
@@ -406,6 +405,116 @@ section {
   color: var(--color-grey-2);
   text-align: justify;
   text-justify: inter-word;
+}
+
+.exp-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: repeat(2, 2rem);
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
+  padding-right: 20rem;
+}
+.exp-item .left-exp {
+  grid-column-start: 0;
+  grid-column-end: 1;
+  position: relative;
+  padding-right: 2rem;
+  padding-left: 3rem;
+  border-left: 1px solid var(--color-grey-5);
+}
+.exp-item .left-exp .tl-icon {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exp-item .left-exp .tl-icon i {
+  font-size: 1.3rem;
+}
+.exp-item .left-exp .tl-icon img {
+  border-radius: 50%;
+}
+.exp-item .left-exp .tl-duration {
+  padding: 0.2rem 0.6rem;
+  background-color: var(--color-grey-5);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.exp-item .left-exp h5 {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.exp-item .left-exp h5 span {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.exp-item .left-exp p {
+  line-height: 5rem;
+  padding: 1rem;
+  color: var(--color-grey-1);
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 1.5rem 0;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+.exp-item .left-exp p .important-info {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+}
+.exp-item .right-exp {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: absolute;
+  align-items: center;
+  position: relative;
+  width: 222px;
+}
+.exp-item .right-exp .h-shape {
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-clip-path: polygon(100% 0, 100% 0, 85% 100%, 0% 100%);
+          clip-path: polygon(100% 0, 100% 0, 85% 100%, 0% 100%);
+}
+.exp-item .right-exp .exp-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-right: 4rem;
+  transition: all 0.4s ease-in-out;
+}
+.exp-item .right-exp .exp-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.4s ease-in-out;
 }
 
 .btn-con {
